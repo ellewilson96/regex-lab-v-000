@@ -23,7 +23,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  if (phone =~ (/\b^([0-9]{10})$\b/)) == nil
+  if phone =~ (/^([0-9]{10})$/)
     false
   else
     true
