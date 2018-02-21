@@ -7,8 +7,11 @@ end
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  (text =~ /\A["un"]/i) && (text =~ /\z["ing"]/i) 
-
+  new_array = []
+  if (text =~ /\A["un"]/i) && (text =~ /\z["ing"]/i) == nil
+    false
+  else
+    new_arrary << text
 end
 
 def words_five_letters_long(text)
