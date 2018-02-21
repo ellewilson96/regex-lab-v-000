@@ -17,7 +17,7 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   if (text =~ /\A[A-Z]\z\W/) == nil
     false
-  elsif (text =~ /\A[A-Z]\z\W/) != nil
+  else
     true
   end
 end
