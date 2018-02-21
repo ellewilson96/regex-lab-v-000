@@ -7,11 +7,9 @@ end
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  new_array = []
-  if (text =~ /\A["un"]/i) && (text =~ /\z["ing"]/i) == nil
-    false
+  text.scan(/\A["un"]/i) && text.scan(/\z["ing"]/i)
   else
-    new_arrary << text
+    
 end
 end
 
