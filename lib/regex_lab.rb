@@ -7,8 +7,8 @@ end
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  if text.scan(/\A["un"]/i) == text.scan(/\z["ing"]/i)
-    puts
+  text.count
+  if text.scan(/\A["un"]/i) == text.scan(/\z["ing"]/i) == true
   else
   end
 end
