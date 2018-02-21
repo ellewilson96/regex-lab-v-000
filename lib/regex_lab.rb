@@ -23,9 +23,9 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  if (phone =~ (/\d{9}/i)) == nil
-    false
-  else
+  if phone =~ (/\d{9}/i)
     true
+  else
+    false
 end
 end
