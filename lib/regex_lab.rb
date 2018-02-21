@@ -24,8 +24,8 @@ end
 
 def valid_phone_number?(phone)
   if phone =~ (/^([0-9]{10})$/)
-    false
-  else
     true
+  else
+    false
 end
 end
