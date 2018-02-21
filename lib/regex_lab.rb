@@ -7,11 +7,7 @@ end
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  if text.scan(/\A["un"]/i) == text.scan(/\z["ing"]/i)
-    text.count
-  else
-    false
-  end
+  text.scan(/\bun\w+ing\b/)
 end
 
 def words_five_letters_long(text)
