@@ -15,7 +15,7 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  if text =~ /\A[A-Z]\z\W/ == nil
+  if (text =~ /\A[A-Z]\z\W/) == nil
     false
   else
     true
